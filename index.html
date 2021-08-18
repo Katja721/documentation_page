@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<head>
+    <title>CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav id="nav-bar">
+            <div id="nav-link"><a href="#What"> What is CSS ?</a></div>
+            <div id="nav-link"><a href="#text-styling">Text styling</a></div>
+            <div id="nav-link"><a href="#properties">Properties</a></div>
+            <div id="nav-link"><a href="#layout">Layout</a></div>
+            <div id="nav-link"><a href="#css-three">CSS3</a></div>
+        </nav>
+    <main id="main-doc">
+        <h1>CSS</h1>
+        <section id="main-section">
+           <h2 id="What">What is CSS ?</h2>
+           <p>Cascading Style Sheets (CSS) is a language we use to style a Web page. 
+               Describes how HTML elements are to be displayed on screen, paper, or in other media. 
+               It can control the layout of multiple web pages all at once. 
+               External stylesheets are stored in CSS files.</p> 
+        </section>
+        <section id="main-section">
+            <h2 id="text-styling">Text styling</h2>
+            <h3>Font-size</h3>
+            <p>The font-size CSS property sets the size of the font.</p>
+            <h3>Font-family</h3>
+            <p>The font-family property specifies the font for an element.
+                There are two types of font family names:
+                <ul>
+                    <li>Font family: a specific font family (like Times New Roman or Arial)</li>
+                    <li>Generic family: a group of font families with a similar look (like Serif or Monospace)</p></li>
+                </ul>
+            <h3>Font-style</h3>
+            <p>The font-style CSS property sets whether a font 
+                should be styled with a normal, italic, or oblique face from its font-family.</p>
+            <h3>Font-weight</h3>
+            <p>The font-weight controls the boldness or thickness of the text. 
+            The values can be set as normal (default size), bold, bolder, and lighter.
+            You can also define the font weight with a number from 100 (thin) to 900 (thick), according to how thick you want the text to be.
+            400 is the same as normal, and 700 is the same as bold.</p>
+            <h3>Font-variant</h3>
+            <p>The CSS font-variant property allows you to convert your font to all small caps. 
+                The values can be set as normal, small-caps, and inherit.</p>
+            <h3>Color</h3>
+            <p>The CSS color property specifies the color of the text.
+                One method of specifying the color of the text is using a color name: like red, green, blue, etc.
+                Another way of defining colors is using hexadecimal values and RGB.
+                Hexadecimal form is a pound sign (#) followed by at most, 6 hex values (0-F).
+                RGB defines the individual values for Red, Green, and Blue.</p>
+            <h3>Text align</h3>
+            <h4>Horizontal</h4>
+            <p>The text-align property specifies the horizontal alignment of text in an element. 
+                By default, text on your website is aligned to the left. 
+                However, at times you may require a different alignment.
+            text-align property values are as follows: left, right, center, and justify.</p>
+            <h4>Vertical</h4>
+            <p>The vertical-align property sets an element's vertical alignment. Commonly used values are top, middle, and bottom.
+                The vertical-align property also takes the following values: baseline, sub, super, % and px (or pt, cm).
+                Vertical align property does not act the same way for all elements.
+                For example, some additional CSS styling is needed for div elements.
+            </p>
+            <h3>Text-decoration</h3>
+            <p>The text-decoration property specifies how the text will be decorated.
+
+                Commonly used values are:<br />
+                none - The default value, this defines a normal text<br />
+                inherit - Inherits this property from its parent element<br />
+                overline - Draws a horizontal line above the text <br />
+                underline - Draws a horizontal line below the text <br />
+                line-through - draws a horizontal line through the text </p>
+            <h3>Indenting text</h3>
+            <p>
+                The text-indent property specifies how much horizontal space should be left before the beginning of the first line of the text. 
+                Property values are length (px, pt, cm, em, etc.), %, and inherit.
+            </p>
+            <h3>Text-shadow</h3>
+            <p>The text-shadow property adds shadow to text.
+                It takes four values: the first value defines the distance of the shadow in the x (horizontal) direction, 
+                the second value sets the distance in the y (vertical) direction, the third value defines the blur of the shadow, 
+                and the fourth value sets the color.
+                When working with shadows, you can use any CSS-supported color format.
+
+                For the x and y offsets, various types of units can be used (like px, cm, mm, in, pc, pt, etc).
+                Negative values are also supported.</p>
+            <h3>Text-transform</h3>
+            <p>The text-transform CSS property specifies how to capitalize an element's text. 
+                For example, it can be used to make text appear with each word capitalized.</p>
+            <h3>White spacing</h3>
+            <p>The white-space property specifies how white-space inside an element is handled. The values can be set as normal, inherit, nowrap, etc.
+
+                The nowrap value makes the text continue on the same line 
+                until a <code> < br> tag </code>is encountered, and also collapses all sequences of whitespace
+                into a single whitespace.
+                Values
+
+
+                The white-space property also supports other values:
+                pre - text will only wrap on line breaks and white space
+                pre-line - text will wrap where there is a break in code, but extra white space is still ignored
+                pre-wrap - text will wrap when necessary, and on line breaks</p>
+                <h3>Letter spacing</h3>
+                <p>The word-spacing property specifies the space between words in a text. 
+                    Just like the letter-spacing property, you can set the word-spacing values as normal, length, and inherit.
+                </p>
+        </section>
+        <hr />
+        <section id="main-section">
+            <h2 id="properties"> Properties</h2>
+            <h3>Box model</h3>
+            <p>All HTML elements can be considered as boxes. 
+                The CSS box model represents the design and layout of the site. 
+                It consists of margins, borders, paddings, and the actual content.
+
+            The properties work in the same order: top, right, bottom, and left.</p>
+            <p>Every element of the webpage is a box.
+
+                CSS uses the box model to determine how big the boxes are and how to place them.
+                </p>
+            <p>Total Width of an Element
+                When working with boxes, it is important to understand how the total width of an element is calculated.
+                For example, the total width of the box with paddings will be the sum of width plus padding left and padding right</p>
+            <p>The total width is the sum of left and right margins, left and right borders, left and right paddings, and the actual width of the content.</p>
+
+            <img src="images/box_model.png">
+            <h3 id="borders">Borders</h3>
+            <p>The CSS border property allows you to customize the borders of HTML elements.
+                In order to add a border to the element, you need to specify the size, style, and color of the border.
+                The example below shows how to add a solid green border to the paragraph.</p>
+            <p>The properties for the border can be set separately. The border-width property specifies the width of the border.</p>
+            <p>The default value of border-style is none, which defines no border.
+                There are various styles supported for the border-style property: dotted, dashed, double, etc. The example below illustrates the differences between them.</p>
+            <h3 id="width_height">Width and height</h3> 
+            <p>The width and height of an element can be also assigned using percents.
+                In the example below the width of an element is assigned in percentages, the height is in pixels.</p>
+            <h4>Minimum and maximum sizes</h4>
+            <p>To set the minimum and maximum height and width of an element, you can use the following properties:</p>   
+                <ul>
+                    <li>min-width - the minimum width of an element</li>
+                    <li>min-height - the minimum height of an element</li>
+                    <li>max-width - the maximum width of an element</li>
+                    <li>max-height - the maximum height of an element</li>
+                </ul>
+            <h3 id="background_color">Background color</h3>
+            <p>The background-color property is used to specify the background color of an element.</p>
+            <p>The color of the background can be defined using three different formats: a color name, hexadecimal values, and RGB.</p>
+
+            <h3 id="background_image">Background color</h3>
+            <p>The background-image property sets one or several background images in an element.</p>
+            <p>Background-image can be set not only for the whole page, but for individual elements, as well.</p>
+
+            <h3 id="background-repeat">Background repeat</h3>
+            <p>The background repeat property specifies how background images are repeated. 
+                A background image can be repeated along the horizontal axis, 
+                the vertical axis both axes, or not repeated at all.
+                The repeat-x will repeat a background image only horizontally.</p>
+            <p>When you set the background-repeat property to inherit, 
+                it will take the same specified value as the property for the element's parent.
+
+                For example, we set the body background repeat only horizontally. 
+                If we set some paragraph background-repeat values to be inherited, 
+                they will take the same property value as the body element.</p>
+            <h3 id="background-attachment">Background attachment</h3>
+            <p>The background-attachment property sets whether a background image is fixed or scrolls with the rest of the page.
+                Even if an element has a scrolling mechanism, a "fixed" background doesn't move with the element.
+                </p>
+                <p>You can also set the background-attachment to inherit or scroll.
+                    When you set the background-attachment to inherit, it will inherit the value from its parent element.
+                    
+                    When you set the background-attachment to scroll, the background image will scroll with the rest of the content.</p>
+            <h3 id="styling_lists">Styling lists</h3>
+            <p>The CSS list properties allow us to set different list item markers. In HTML, there are two types of lists:
+                unordered lists - the list items are marked with bullets
+                ordered lists - the list items are marked with numbers or letters
+                With CSS, lists can be styled further, and images can be used as the list item marker.
+                One of the ways is to use the list-style-type property, which can be set to circle, square, decimal, disc, lower-alpha, etc.</p>
+                <p>There are also other list properties, such as:
+                    list-style-image - specifies an image to be used as the list item marker.
+                    list-style-position - specifies the position of the marker box (inside, outside).</p>
+                <p>The list-style property is a shorthand property for setting list-style-type, list-style-image and list-style-position. </p>
+                
+            <h3 id="styling-tables">Styling tables</h3>
+            <p>The look of an HTML table can be greatly improved with CSS.
+
+                The border-collapse property specifies whether the table borders are collapsed into a single border or separated as default. 
+                If the borders are separate, the border-spacing property can be used to change the spacing.</p>
+            <p>The caption-side property specifies the position of a table caption. The values can be set as top or bottom.
+                In the example below, we specify the placement of a table caption to top.</p>
+                <p>The empty-cells property specifies whether or not to display borders and background on empty cells in a table.
+                    Possible values are:<br />
+                    show: the borders of an empty cell are rendered<br />
+                    hide: the borders of an empty cell are not drawn</p>
+            <p>he table-layout specifies how the width of table columns is calculated. The possible values are:
+                auto - when column or cell width are not explicitly set, the column width will be in proportion to the amount of content in the cells that make up the column
+                fixed - when column or cell width are not explicitly set, the column width will not be affected by the amount of content in the cells that make up the column.
+                
+                The table layout is set to auto by default.</p>
+        </section>
+        <hr />
+        <section id="main-section">
+            <h2 id="layout">Layout</h2>
+                <h3 id="display">Display</h3>
+                <p>Every element on a web page is a rectangular box.The display property determines how that rectangular box behaves. A block element is an element that takes up the fullest width available, with line breaks before and after.
+                    The style rules in the following example display the inline span elements as block-level elements:</p>
+                <p>An inline element only takes up as much width as necessary, and does not force line breaks.</p>
+                <p>display:none hides an element, so it does not take up any space. The element will be hidden, and the page will be displayed as if the element is not there.</p>
+                <h3 id="visibilit">Visibility</h3>
+                <p>The visibility property specifies whether an element is visible or hidden. The most common values are visible and hidden.</p>
+
+                <p>Hiding an element can be done by setting the display property to "none" or the visibility property to "hidden". However, notice that these two methods produce different results:
+                    visibility:hidden hides an element, but it will still take up the same space as before. The element will be hidden, but it will still affect the layout</p>
+                <h3 id="positioning">Positioning</h3>
+                <p>The CSS positioning properties allow you to position an element. It can also place an element behind another, and specify what should happen when an element's content is too big.
+
+                    Elements can be positioned using the top, bottom, left, and right properties. However, these properties will not work unless the position property is set first. 
+                    They also work differently depending on the positioning method.</p>
+                    
+                    <h4>Static positioning</h4>
+                    <p>HTML elements are positioned static by default. A static positioned element is always positioned according to the normal flow of the page.</p>
+
+                    <h4>Fixed Positioning</h4>
+
+                    <p>An element with a fixed position is positioned relative to the browser window, 
+                    and will not move even if the window is scrolled.
+                    The position can be specified using one or more of the properties top, right, bottom, and left.
+                    In the example below, the paragraph is fixed to 30px from the top and 5px from the right.</p>
+
+                    <h4>Relative Positioning</h4>
+                    <p>A relative positioned element is positioned relative to its normal position.
+                    The properties top, right, bottom, and left can be used to specify how the rendered box will be shifted.</p>
+                    <h3 id="floating">Floating</h3>
+
+
+                    <p>With CSS float, an element can be pushed to the left or right, allowing other elements to wrap around it.
+                    Float is often used with images, but it is also useful when working with layouts.
+                    The values for the float property are left, right, and none.
+                    Left and right float elements in those directions, respectively. none (the default) ensures that the element will not float.
+                    Below is an example of an image that is floated to the right.</p>
+                    <p>If you place several floating elements one after the other, they will float next to each other if there is enough room.
+                        As an example, in a print layout, images may be set into the page such that text wraps around them as needed.</p>
+                    
+                    <h3 id="clear">Clear</h3>
+                    <p>Elements that come after the floating element will flow around it. To avoid this, use the clear property.
+                        The clear property specifies the sides of an element where other floating elements are not allowed to be.
+                        
+                        In the example below, if we set the float property to the div, only the paragraph that comes after the div will be wrapped around the image.</p>
+                        <p>Use the values right, left, and both to specify the sides of an element where other floating elements are not allowed to be.</p>
+                        <p>both is used to clear floats coming from either direction. </p>
+
+                    <h3 id="overflow">Overflow</h3>
+                    <p>There are four values for the overflow property: visible (the default value), scroll, hidden, and auto.
+
+                        The value scroll results in clipped overflow, but a scrollbar is added, so the rest of the content may be seen.
+                        </p>
+                    <p>auto - If overflow is clipped, a scroll-bar should be added to make it possible to see the rest of the content.</p>
+                    <p>hidden - The overflow is clipped, and the rest of the content will be invisible.</p>    
+                    <h3 id="z_index">The z-index</h3>
+                    <p>When elements are positioned outside the normal flow, they can overlap other elements.
+                        The z-index property specifies the stack order of an element (which element should be placed in front of, or behind, the others).</p>
+        </section>
+        <hr />
+        <section id="main-section">
+            <h2 id="css-three">CSS3</h2>
+            <p>CSS3 is the latest standard for CSS.</p>
+<p>CSS3 is completely backwards-compatible with earlier CSS versions.</p>
+
+ Some of the most significant new features are:
+<ul>
+    <li> Radius - allows us to create rounded corners for elements.</li>
+    <li>Border images - allows us to specify an image as the border around an element.</li>
+    <li>Multiple backgrounds - applies multiple backgrounds to elements. Animations and effects, and much more!</li>
+</ul>   
+<p>
+    To make web development easier and faster, CSS3 introduces additional new features, including the following:</p>
+<ul>
+<li>Box Shadow<br />
+With the box-shadow property, you can attach one or more shadows to an element by specifying values for color, size, blur, and offset.</li>
+
+<li>Gradients<br />
+CSS3 gradients allow us to set the background color of the element to a gradient. Two types of gradients are available: Linear and Radial.</li>
+</ul> 
+<h3 id="transforms">Transforms</h3>
+<p>Transforms allow you to rotate, scale, move, and skew elements.</p>
+
+<p>Another popular feature is Transitions which allows you to animate from one CSS property value to another. You can combine it with transforms and animate the element's position, rotation, or scale.</p>
+<p>The property attracting the most attention is Animations.</p>
+<p>CSS Animations have their own specifications, and they allow you to create keyframes, set duration, easing, and more.</p>
+<h3 id="vendor-prefixes">Vendor prefixes</h3>
+<p>CSS vendor prefixes or CSS browser prefixes are a way for browser makers to add support for new CSS features during periods of testing and experimentation. Browser prefixes are used to add new features that may not be part of the final and formal CSS specification.</p>
+
+<p>For example, the prefix for Safari and Chrome is -webkit. The border-radius property is currently supported in Chrome, Safari, and Mozilla, as long as it is accompanied by the browser prefix.</p>
+
+    
+<h3 id="border_radius">Border radius</h3>
+<p>With CSS3, you can give any element "rounded corners" by using the border-radius property.</p>
+<p>Specific border radius values can be applied for the border-radius property in the following order: top-left, top-right, bottom-right, bottom-left.</p>
+<p>A rectangle can be turned into a circle using only CSS.
+    To create a circle, the border radius should be half of the height and the width.</p>
+    
+
+</section>
+    </main>
+</body>
+</html>

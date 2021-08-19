@@ -297,8 +297,44 @@ CSS3 gradients allow us to set the background color of the element to a gradient
 <p>Specific border radius values can be applied for the border-radius property in the following order: top-left, top-right, bottom-right, bottom-left.</p>
 <p>A rectangle can be turned into a circle using only CSS.
     To create a circle, the border radius should be half of the height and the width.</p>
-    
+<h3 id="box-shadow">Box shadow</h3>
+<p>The CSS3 box-shadow property applies shadow to elements.
+    Components of the box-shadow property are decoded by browsers in the following manner:</p>
+    <un>
+        <li>The first length for the horizontal offset will cast the shadow to the right of the box (required)</li>
+        <li> second length is for the vertical offset that will cast the shadow to below the box (required)</li>
+        <li>The color of the shadow (optional)</li>
+    </un>
+    <p>Besides color, there are also two optional values for the box-shadow element, which are blur and spread.</p>
+    <p>Negative values can also be used for the box-shadow property.</p>
+        <li>horizontal offset - the shadow will be to the left of the box</li>
+        <li>vertical offset - the shadow will be above the box</li>
+        <li>blur radius - negative values are not allowed</li>
+        <li>spread radius - negative values will cause the shadow to shrink</li>
+    <h4>Creating inner shadow</h4>
+    <p>The "inset" keyword allows to draw an inner shadow in the box. To show an inset shadow, just add the inset keyword.</p>
+    <h4>Layering multiple shadows</h4>
+    <p>You can define as many shadows for the same box as you want by writing all of them comma-separated in the same rule.</p>
+    <p>In the example below, two inner shadows have been created by separating each shadow with a comma.</p>
+<h3 id="transparency">Transparency</h3>
+<p>Before CSS3, transparent background images were used to create transparency effects. 
+    The new features of CSS3 now make it easier to create transparency effects.</p>
 
+    <p>CSS supports color names, hexadecimal, and RGB colors.</p>
+    <p>In addition, CSS3 introduces the following:</p>
+    
+    <h4>RGBA Colors</h4>
+    <p> RGBA color values are an extension of RGB color values with an alpha channel, which specifies the opacity for a color.</p>
+    <p> An RGBA color value is specified with: rgba(red, green, blue, alpha). The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).</p>
+    
+    <h4> HSL (Hue, Saturation, Lightness) Colors</h4>
+    <p>An HSL color value is specified with: hsl(hue, saturation, lightness).</p>
+    <p>Hue is a degree on the color wheel ranging from 0 to 360</p>
+    <p>0 (or 360) is red, 120 is green, 240 is blue.</p>
+    <p>Saturation is a percentage value: 100% is the full color.</p>
+    <p>Lightness is also a percentage; 0% is dark (black) and 100% is white. 
+        HSLA color values are an extension of HSL color values with an alpha channel - which specifies the opacity 
+        for a color (just like RGBA).</p>
 </section>
     </main>
 </body>

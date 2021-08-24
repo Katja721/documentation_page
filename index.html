@@ -379,6 +379,15 @@ CSS3 gradients allow us to set the background color of the element to a gradient
 <header id="radial-graient">Radial gradients</header>
 <p>To create a radial gradient, you must define at least two color stops.
     The radial gradient is defined by its center.</p>
+    <p>The first value defines the gradient position. 
+        We can use a descriptive keyword, such as top, bottom, center, or left; 
+        or we can specify, for example, 50% 50% to set the gradient at the center or 0% 0% to set the gradient to start at top left.</p>
+        <p>The second value defines the shape and the gradient size. There are two arguments to shape gradients: The first is the ellipse, which is the default; and the second is the circle.</p>
+        <p>Lastly, the third value defines the color combination.</p>
+        <p>The shape parameter defines the shape. If you do not define the shape of the radial gradient, it will take the ellipse value by default.</p>
+        <p>Essentially, we can use the same method used to specify the location of a background image with the background-position CSS property to specify the location of the ellipse’s center. We specify the horizontal position of the background, 
+            and - optionally - the vertical position using either keywords (left, center right, or top, center, bottom), length values, percentage values, or some combination of these.</p>
+        <p>As with linear gradients, a color stop is specified with a color, plus an optional stop position, which is a length or percentage value.</p>
 </section>
     </main>
 </body>

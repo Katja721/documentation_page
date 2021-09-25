@@ -1,393 +1,177 @@
 <!DOCTYPE html>
 <head>
-    <title>CSS</title>
+    <title>Git</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
-    <nav id="navbar">
-            <div class="nav-link"><a href="#What"> What is CSS ?</a></div>
-            <div class="nav-link"><a href="#text-styling">Text styling</a></div>
-            <div class="nav-link"><a href="#properties">Properties</a></div>
-            <div class="nav-link"><a href="#layout">Layout</a></div>
-            <div class="nav-link"><a href="#css-three">CSS3</a></div>
+    <nav id="navbar" class="scroll">
+            <div class="nav-link"><a href="#What"> What is Git ?</a></div>
+            <div class="nav-link"><a href="#instalation">Installation and Guis</a></div>
+            <div class="nav-link"><a href="#setup">Setup</a></div>
+            <div class="nav-link"><a href="#setup_and_init">Setup and init</a></div>
+            <div class="nav-link"><a href="#stage-and-snapshot">Stage and snapshot</a></div>
+            <div class="nav-link"><a href="#branch-and-merge">Branch and merge</a></div>
+            <div class="nav-link"><a href="#inspect-and-compare">Inspect and compare</a></div>
+            <div class="nav-link"><a href="#share-and-update">Share and update</a></div>
+            <div class="nav-link"><a href="#rewrite-history">Rewrite history</a></div>
+            <div class="nav-link"><a href="#tracking-path-changes">tracking path changes</a></div>
+            <div class="nav-link"><a href="#temporary-commits">Temporary commits</a></div>
         </nav>
     <main id="main-doc">
-        <h1>CSS</h1>
+        <h1>Git</h1>
         <section id="main-section">
-           <header id="What">What is CSS ?</header>
-           <p>Cascading Style Sheets (CSS) is a language we use to style a Web page. 
-               Describes how HTML elements are to be displayed on screen, paper, or in other media. 
-               It can control the layout of multiple web pages all at once. 
-               External stylesheets are stored in CSS files.</p> 
+           <header id="What">What is git ?</header>
+           <p>Git is free and open source distributed version control system
+               responsible for every thing GitHub related that happens locally on your computer.
+           </p> 
         </section>
         <section id="main-section">
-            <header id="text-styling">Text styling</header>
-            <header>Font-size</header>
-            <p>The font-size CSS property sets the size of the font.</p>
-            <header>Font-family</header>
-            <p>The font-family property specifies the font for an element.
-                There are two types of font family names:
-                <ul>
-                    <li>Font family: a specific font family (like Times New Roman or Arial)</li>
-                    <li>Generic family: a group of font families with a similar look (like Serif or Monospace)</p></li>
-                </ul>
-            <header>Font-style</header>
-            <p>The font-style CSS property sets whether a font 
-                should be styled with a normal, italic, or oblique face from its font-family.</p>
-            <header>Font-weight</header>
-            <p>The font-weight controls the boldness or thickness of the text. 
-            The values can be set as normal (default size), bold, bolder, and lighter.
-            You can also define the font weight with a number from 100 (thin) to 900 (thick), according to how thick you want the text to be.
-            400 is the same as normal, and 700 is the same as bold.</p>
-            <header>Font-variant</header>
-            <p>The CSS font-variant property allows you to convert your font to all small caps. 
-                The values can be set as normal, small-caps, and inherit.</p>
-            <header>Color</header>
-            <p>The CSS color property specifies the color of the text.
-                One method of specifying the color of the text is using a color name: like red, green, blue, etc.
-                Another way of defining colors is using hexadecimal values and RGB.
-                Hexadecimal form is a pound sign (#) followed by at most, 6 hex values (0-F).
-                RGB defines the individual values for Red, Green, and Blue.</p>
-            <header>Text align</header>
-            <h4>Horizontal</h4>
-            <p>The text-align property specifies the horizontal alignment of text in an element. 
-                By default, text on your website is aligned to the left. 
-                However, at times you may require a different alignment.
-            text-align property values are as follows: left, right, center, and justify.</p>
-            <h4>Vertical</h4>
-            <p>The vertical-align property sets an element's vertical alignment. Commonly used values are top, middle, and bottom.
-                The vertical-align property also takes the following values: baseline, sub, super, % and px (or pt, cm).
-                Vertical align property does not act the same way for all elements.
-                For example, some additional CSS styling is needed for div elements.
+            <header id="installation">Installation and GUIS</header>
+            <p>With platform specific installers for Git, GitHub also provides the 
+                ease of staying up  to date with the latest releases of the command line 
+                tool while providing a graphical interface for day-to-day  interaction
+                review and respiratory synchronization
             </p>
-            <header>Text-decoration</header>
-            <p>The text-decoration property specifies how the text will be decorated.
+            <header>GitHub for Windows</header>
+            <p>https://windows.github.com</p>
+            <header>GitHub for Mac</header>
+            <p>https://mac.github.com </p>
 
-                Commonly used values are:<br />
-                none - The default value, this defines a normal text<br />
-                inherit - Inherits this property from its parent element<br />
-                overline - Draws a horizontal line above the text <br />
-                underline - Draws a horizontal line below the text <br />
-                line-through - draws a horizontal line through the text </p>
-            <header>Indenting text</header>
-            <p>
-                The text-indent property specifies how much horizontal space should be left before the beginning of the first line of the text. 
-                Property values are length (px, pt, cm, em, etc.), %, and inherit.
-            </p>
-            <header>Text-shadow</header>
-            <p>The text-shadow property adds shadow to text.
-                It takes four values: the first value defines the distance of the shadow in the x (horizontal) direction, 
-                the second value sets the distance in the y (vertical) direction, the third value defines the blur of the shadow, 
-                and the fourth value sets the color.
-                When working with shadows, you can use any CSS-supported color format.
-
-                For the x and y offsets, various types of units can be used (like px, cm, mm, in, pc, pt, etc).
-                Negative values are also supported.</p>
-            <header>Text-transform</header>
-            <p>The text-transform CSS property specifies how to capitalize an element's text. 
-                For example, it can be used to make text appear with each word capitalized.</p>
-            <header>White spacing</header>
-            <p>The white-space property specifies how white-space inside an element is handled. The values can be set as normal, inherit, nowrap, etc.
-
-                The nowrap value makes the text continue on the same line 
-                until a <code> < br> tag </code>is encountered, and also collapses all sequences of whitespace
-                into a single whitespace.
-                Values
-
-
-                The white-space property also supports other values:
-                pre - text will only wrap on line breaks and white space
-                pre-line - text will wrap where there is a break in code, but extra white space is still ignored
-                pre-wrap - text will wrap when necessary, and on line breaks</p>
-                <header>Letter spacing</header>
-                <p>The word-spacing property specifies the space between words in a text. 
-                    Just like the letter-spacing property, you can set the word-spacing values as normal, length, and inherit.
-                </p>
+            <p>For Linux and Solaris platforms, the latest release is available on the offical Git website</p>
+            <header>Git for All Platforms</header>
+            <p>https://git-scm.com</p>
         </section>
         <hr />
         <section id="main-section">
-            <header id="properties"> Properties</header>
-            <header>Box model</header>
-            <p>All HTML elements can be considered as boxes. 
-                The CSS box model represents the design and layout of the site. 
-                It consists of margins, borders, paddings, and the actual content.
+            <header id="setup">Setup</header>
+            <p>Configuring user information used across all local repertories</p>
+            <div><code>git config --global user.name "[firstname lastname]"</code></div>
+            <p>set name that is identifiable for credit when review version history</p>
 
-            The properties work in the same order: top, right, bottom, and left.</p>
-            <p>Every element of the webpage is a box.
+            <div><code>git config --global user.email "[valid-email]"</code></div>
+            <p>set email address that will be associated with each history maker</p>
 
-                CSS uses the box model to determine how big the boxes are and how to place them.
-                </p>
-            <p>Total Width of an Element
-                When working with boxes, it is important to understand how the total width of an element is calculated.
-                For example, the total width of the box with paddings will be the sum of width plus padding left and padding right</p>
-            <p>The total width is the sum of left and right margins, left and right borders, left and right paddings, and the actual width of the content.</p>
+            <div><code>git config --global color.ui auto</code></div>
+            <p>set automatic command line coloring for Git for easy reviewing</p>
 
-            <img src="images/box_model.png">
-            <header id="borders">Borders</header>
-            <p>The CSS border property allows you to customize the borders of HTML elements.
-                In order to add a border to the element, you need to specify the size, style, and color of the border.
-                The example below shows how to add a solid green border to the paragraph.</p>
-            <p>The properties for the border can be set separately. The border-width property specifies the width of the border.</p>
-            <p>The default value of border-style is none, which defines no border.
-                There are various styles supported for the border-style property: dotted, dashed, double, etc. The example below illustrates the differences between them.</p>
-            <header id="width_height">Width and height</header> 
-            <p>The width and height of an element can be also assigned using percents.
-                In the example below the width of an element is assigned in percentages, the height is in pixels.</p>
-            <h4>Minimum and maximum sizes</h4>
-            <p>To set the minimum and maximum height and width of an element, you can use the following properties:</p>   
-                <ul>
-                    <li>min-width - the minimum width of an element</li>
-                    <li>min-height - the minimum height of an element</li>
-                    <li>max-width - the maximum width of an element</li>
-                    <li>max-height - the maximum height of an element</li>
-                </ul>
-            <header id="background_color">Background color</header>
-            <p>The background-color property is used to specify the background color of an element.</p>
-            <p>The color of the background can be defined using three different formats: a color name, hexadecimal values, and RGB.</p>
-
-            <header id="background_image">Background color</header>
-            <p>The background-image property sets one or several background images in an element.</p>
-            <p>Background-image can be set not only for the whole page, but for individual elements, as well.</p>
-
-            <header id="background-repeat">Background repeat</header>
-            <p>The background repeat property specifies how background images are repeated. 
-                A background image can be repeated along the horizontal axis, 
-                the vertical axis both axes, or not repeated at all.
-                The repeat-x will repeat a background image only horizontally.</p>
-            <p>When you set the background-repeat property to inherit, 
-                it will take the same specified value as the property for the element's parent.
-
-                For example, we set the body background repeat only horizontally. 
-                If we set some paragraph background-repeat values to be inherited, 
-                they will take the same property value as the body element.</p>
-            <header id="background-attachment">Background attachment</header>
-            <p>The background-attachment property sets whether a background image is fixed or scrolls with the rest of the page.
-                Even if an element has a scrolling mechanism, a "fixed" background doesn't move with the element.
-                </p>
-                <p>You can also set the background-attachment to inherit or scroll.
-                    When you set the background-attachment to inherit, it will inherit the value from its parent element.
-                    
-                    When you set the background-attachment to scroll, the background image will scroll with the rest of the content.</p>
-            <header id="styling_lists">Styling lists</header>
-            <p>The CSS list properties allow us to set different list item markers. In HTML, there are two types of lists:
-                unordered lists - the list items are marked with bullets
-                ordered lists - the list items are marked with numbers or letters
-                With CSS, lists can be styled further, and images can be used as the list item marker.
-                One of the ways is to use the list-style-type property, which can be set to circle, square, decimal, disc, lower-alpha, etc.</p>
-                <p>There are also other list properties, such as:
-                    list-style-image - specifies an image to be used as the list item marker.
-                    list-style-position - specifies the position of the marker box (inside, outside).</p>
-                <p>The list-style property is a shorthand property for setting list-style-type, list-style-image and list-style-position. </p>
-                
-            <header id="styling-tables">Styling tables</header>
-            <p>The look of an HTML table can be greatly improved with CSS.
-
-                The border-collapse property specifies whether the table borders are collapsed into a single border or separated as default. 
-                If the borders are separate, the border-spacing property can be used to change the spacing.</p>
-            <p>The caption-side property specifies the position of a table caption. The values can be set as top or bottom.
-                In the example below, we specify the placement of a table caption to top.</p>
-                <p>The empty-cells property specifies whether or not to display borders and background on empty cells in a table.
-                    Possible values are:<br />
-                    show: the borders of an empty cell are rendered<br />
-                    hide: the borders of an empty cell are not drawn</p>
-            <p>he table-layout specifies how the width of table columns is calculated. The possible values are:
-                auto - when column or cell width are not explicitly set, the column width will be in proportion to the amount of content in the cells that make up the column
-                fixed - when column or cell width are not explicitly set, the column width will not be affected by the amount of content in the cells that make up the column.
-                
-                The table layout is set to auto by default.</p>
         </section>
         <hr />
         <section id="main-section">
-            <header id="layout">Layout</header>
-                <header id="display">Display</header>
-                <p>Every element on a web page is a rectangular box.The display property determines how that rectangular box behaves. A block element is an element that takes up the fullest width available, with line breaks before and after.
-                    The style rules in the following example display the inline span elements as block-level elements:</p>
-                <p>An inline element only takes up as much width as necessary, and does not force line breaks.</p>
-                <p>display:none hides an element, so it does not take up any space. The element will be hidden, and the page will be displayed as if the element is not there.</p>
-                <header id="visibilit">Visibility</header>
-                <p>The visibility property specifies whether an element is visible or hidden. The most common values are visible and hidden.</p>
+            
+                <header id="setup_and_init">Setup and init</header>
+                <p>Configuring user information, initializing and cloning repositories</p>
+                <div><code>git init</code></div>
+                <p>initialize an existing directory as Git repository</p>
 
-                <p>Hiding an element can be done by setting the display property to "none" or the visibility property to "hidden". However, notice that these two methods produce different results:
-                    visibility:hidden hides an element, but it will still take up the same space as before. The element will be hidden, but it will still affect the layout</p>
-                <header id="positioning">Positioning</header>
-                <p>The CSS positioning properties allow you to position an element. It can also place an element behind another, and specify what should happen when an element's content is too big.
+                <header id="stage-and-snapshot">Stage and snapshot</header>
+                    <p>Working with snapshots and the Git staging area</p>
+                    <div><code>git status</code></div>
+                    <p>show modified files in working directory, staged for your next commit</p>
 
-                    Elements can be positioned using the top, bottom, left, and right properties. However, these properties will not work unless the position property is set first. 
-                    They also work differently depending on the positioning method.</p>
-                    
-                    <h4>Static positioning</h4>
-                    <p>HTML elements are positioned static by default. A static positioned element is always positioned according to the normal flow of the page.</p>
+                    <div><code>git add [file]</code></div>
+                    <p>add a file  as it looks now to your next commit (stage)</p>
 
-                    <h4>Fixed Positioning</h4>
+                    <div><code>git reset [file]</code></div>
+                    <p>unstage a file while retaining the changes in working directory</p>
+                    <div><code>git diff</code></div>
+                    <p>diff of what is staged but not committed</p>
 
-                    <p>An element with a fixed position is positioned relative to the browser window, 
-                    and will not move even if the window is scrolled.
-                    The position can be specified using one or more of the properties top, right, bottom, and left.
-                    In the example below, the paragraph is fixed to 30px from the top and 5px from the right.</p>
-
-                    <h4>Relative Positioning</h4>
-                    <p>A relative positioned element is positioned relative to its normal position.
-                    The properties top, right, bottom, and left can be used to specify how the rendered box will be shifted.</p>
-                    <header id="floating">Floating</header>
-
-
-                    <p>With CSS float, an element can be pushed to the left or right, allowing other elements to wrap around it.
-                    Float is often used with images, but it is also useful when working with layouts.
-                    The values for the float property are left, right, and none.
-                    Left and right float elements in those directions, respectively. none (the default) ensures that the element will not float.
-                    Below is an example of an image that is floated to the right.</p>
-                    <p>If you place several floating elements one after the other, they will float next to each other if there is enough room.
-                        As an example, in a print layout, images may be set into the page such that text wraps around them as needed.</p>
-                    
-                    <header id="clear">Clear</header>
-                    <p>Elements that come after the floating element will flow around it. To avoid this, use the clear property.
-                        The clear property specifies the sides of an element where other floating elements are not allowed to be.
-                        
-                        In the example below, if we set the float property to the div, only the paragraph that comes after the div will be wrapped around the image.</p>
-                        <p>Use the values right, left, and both to specify the sides of an element where other floating elements are not allowed to be.</p>
-                        <p>both is used to clear floats coming from either direction. </p>
-
-                    <header id="overflow">Overflow</header>
-                    <p>There are four values for the overflow property: visible (the default value), scroll, hidden, and auto.
-
-                        The value scroll results in clipped overflow, but a scrollbar is added, so the rest of the content may be seen.
-                        </p>
-                    <p>auto - If overflow is clipped, a scroll-bar should be added to make it possible to see the rest of the content.</p>
-                    <p>hidden - The overflow is clipped, and the rest of the content will be invisible.</p>    
-                    <header id="z_index">The z-index</header>
-                    <p>When elements are positioned outside the normal flow, they can overlap other elements.
-                        The z-index property specifies the stack order of an element (which element should be placed in front of, or behind, the others).</p>
+                    <div><code>git commit -m "[descriptive message]"</code></div>
+                    <p>commit your staged content as a new commit snapshot</p>
         </section>
         <hr />
         <section id="main-section">
-            <header id="css-three">CSS3</header>
-            <p>CSS3 is the latest standard for CSS.</p>
-<p>CSS3 is completely backwards-compatible with earlier CSS versions.</p>
+            <header id="branch-and-merge">Branch and marge</header>
+            <p>Isolating work in branches, changing context, and integrating changes</p>
+            <div><code>git branch</code></div>
+            <p>list your branches. a*will appear next to the currently active branch</p>
 
- Some of the most significant new features are:
-<ul>
-    <li> Radius - allows us to create rounded corners for elements.</li>
-    <li>Border images - allows us to specify an image as the border around an element.</li>
-    <li>Multiple backgrounds - applies multiple backgrounds to elements. Animations and effects, and much more!</li>
-</ul>   
-<p>
-    To make web development easier and faster, CSS3 introduces additional new features, including the following:</p>
-<ul>
-<li>Box Shadow<br />
-With the box-shadow property, you can attach one or more shadows to an element by specifying values for color, size, blur, and offset.</li>
+            <div><code>git branch [branch-name]</code></div>
+            <p>create a new branch at the current commit</p>
 
-<li>Gradients<br />
-CSS3 gradients allow us to set the background color of the element to a gradient. Two types of gradients are available: Linear and Radial.</li>
-</ul> 
-<header id="transforms">Transforms</header>
-<p>Transforms allow you to rotate, scale, move, and skew elements.</p>
+            <div><code>git checkout</code></div>
+            <p>switch to another branch and check it out into working directory</p>
 
-<p>Another popular feature is Transitions which allows you to animate from one CSS property value to another. You can combine it with transforms and animate the element's position, rotation, or scale.</p>
-<p>The property attracting the most attention is Animations.</p>
-<p>CSS Animations have their own specifications, and they allow you to create keyframes, set duration, easing, and more.</p>
-<header id="vendor-prefixes">Vendor prefixes</header>
-<p>CSS vendor prefixes or CSS browser prefixes are a way for browser makers to add support for new CSS features during periods of testing and experimentation. Browser prefixes are used to add new features that may not be part of the final and formal CSS specification.</p>
+            <div><code>git merge [branch]</code></div>
+            <p>merge the specific brach's history into the current one</p>
 
-<p>For example, the prefix for Safari and Chrome is -webkit. The border-radius property is currently supported in Chrome, Safari, and Mozilla, as long as it is accompanied by the browser prefix.</p>
-
+            <div><code>git log</code></div>
+            <p>show all commits in the current branch's history</p>
     
-<header id="border_radius">Border radius</header>
-<p>With CSS3, you can give any element "rounded corners" by using the border-radius property.</p>
-<p>Specific border radius values can be applied for the border-radius property in the following order: top-left, top-right, bottom-right, bottom-left.</p>
-<p>A rectangle can be turned into a circle using only CSS.
-    To create a circle, the border radius should be half of the height and the width.</p>
-<header id="box-shadow">Box shadow</header>
-<p>The CSS3 box-shadow property applies shadow to elements.
-    Components of the box-shadow property are decoded by browsers in the following manner:</p>
-    <un>
-        <li>The first length for the horizontal offset will cast the shadow to the right of the box (required)</li>
-        <li> second length is for the vertical offset that will cast the shadow to below the box (required)</li>
-        <li>The color of the shadow (optional)</li>
-    </un>
-    <p>Besides color, there are also two optional values for the box-shadow element, which are blur and spread.</p>
-    <p>Negative values can also be used for the box-shadow property.</p>
-        <li>horizontal offset - the shadow will be to the left of the box</li>
-        <li>vertical offset - the shadow will be above the box</li>
-        <li>blur radius - negative values are not allowed</li>
-        <li>spread radius - negative values will cause the shadow to shrink</li>
-    <h4>Creating inner shadow</h4>
-    <p>The "inset" keyword allows to draw an inner shadow in the box. To show an inset shadow, just add the inset keyword.</p>
-    <h4>Layering multiple shadows</h4>
-    <p>You can define as many shadows for the same box as you want by writing all of them comma-separated in the same rule.</p>
-    <p>In the example below, two inner shadows have been created by separating each shadow with a comma.</p>
-<header id="transparency">Transparency</header>
-<p>Before CSS3, transparent background images were used to create transparency effects. 
-    The new features of CSS3 now make it easier to create transparency effects.</p>
+</section>
+<hr />
+<section id="main-section">
+    <header id="inspect-and-compare">Inspect and compare</header>
+    <p>Examining, diffs and object information</p>
 
-    <p>CSS supports color names, hexadecimal, and RGB colors.</p>
-    <p>In addition, CSS3 introduces the following:</p>
-    
-    <h4>RGBA Colors</h4>
-    <p> RGBA color values are an extension of RGB color values with an alpha channel, which specifies the opacity for a color.</p>
-    <p> An RGBA color value is specified with: rgba(red, green, blue, alpha). The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).</p>
-    
-    <h4> HSL (Hue, Saturation, Lightness) Colors</h4>
-    <p>An HSL color value is specified with: hsl(hue, saturation, lightness).</p>
-    <p>Hue is a degree on the color wheel ranging from 0 to 360</p>
-    <p>0 (or 360) is red, 120 is green, 240 is blue.</p>
-    <p>Saturation is a percentage value: 100% is the full color.</p>
-    <p>Lightness is also a percentage; 0% is dark (black) and 100% is white. 
-        HSLA color values are an extension of HSL color values with an alpha channel - which specifies the opacity 
-        for a color (just like RGBA).</p>
-<header id="text-shadow">Text shadow</header>
-<p>The text-shadow property defines one or more comma-separated shadow effects, to be applied to the text content of the current element.</p>
-<p>The text-shadow style can accept multiple values in a comma-separated list.
-    According to CSS2, the shadows are laid down in the order they appear, so if they overlap, the last one that is specified should appear on top. CSS3 has now changed that so they are applied in reverse order.
-    To create multiple shadows, the shadows are separated with a comma.</p>
-<header id="pseudo-classes">Pseudo classes</header>
-<p>The CSS pseudo-classes allow us to style elements, or parts of elements, that exist in the document tree without using JavaScript or any other scripts. A pseudo-class starts with a ":" (colon).</p>
-<p>The most commonly used pseudo-classes are :first-child and :last-child.</p>    
-<p>The :first-child pseudo-class matches an element that is the first child element of some other element.</p>
-<header id="pseudo-elements">Pseudo elements</header>
-<p>Pseudo elements are used to select specific parts of an element.</p>
-<p>There are five pseudo elements in CSS, each starting with a double colon (::):</p>
-    <ul>
-        <li>::first-line - the first line of the text in a selector</li>
-        <li>::first-letter - the first letter of the text in a selector</li>
-        <li>::selection - selects the portion of an element that is selected by a user</li>
-        <li>::before - inserts some content before an element</li>
-        <li>::after - inserts some content after an element</li>
-    </ul>
-<p>Using ::before and ::after pseudo elements allows us to add a wide variety of content to the page.</p>
-<header id="word-wrap">Word wrap</header>
-<p>The word-wrap property allows long words to be broken and wrapped into the next line. It takes two values: normal and break-word.</p>
-<header id="font-face">Font face</header>
-<p>The @font-face rule allows custom fonts to be loaded into a webpage.</p>
-<p>With the help of this rule, designs are no longer limited to the fonts that are installed on a user's computer.</p>
-<p>In Internet Explorer 8 and earlier, the URL must point to an Embedded OpenType (eot) file, while Firefox, Chrome, etc. support True Type Fonts (ttf) fonts and OpenType Fonts (otf).</p>
-<p>Each form of the font family must be declared using the @font-face rule.</p>
-<header id="linear-gradients">Linear gradients</header>
-<p>CSS3 gradients enable you to display smooth transitions between two or more specified colors. 
-    CSS3 defines two types of gradients: Linear and Radial.</p>
+    <div><code>git log</code></div>
+    <p>show the commit history for the currently active branch</p>
 
-    <p>To create a linear gradient, you must define at least two color stops. 
-        Color stops are the colors among which you want to render smooth transitions. 
-        You can also set a starting point and a direction - or an angle - along with the gradient effect.</p>
-        <p>Colors can be added one after the other, separated with a comma. The browser will then determine each color stop position.</p>
-        <p>The direction of the gradient can be changed.</p>
-        <p>As an alternative to predefined directions (bottom, top, right, left, bottom right, etc.), 
-            you can control the gradient's direction by specifying an angle.</p>
-            <p>The angle is specified as an angle extending between a horizontal line and the gradient line. 
-            In other words, 0deg creates a left-to right-gradient, while 90deg generates a bottom-to-top gradient.</p>
-        <p>The repeating-linear-gradient() function is used to repeat a linear gradient</p>
-<header id="radial-graient">Radial gradients</header>
-<p>To create a radial gradient, you must define at least two color stops.
-    The radial gradient is defined by its center.</p>
-    <p>The first value defines the gradient position. 
-        We can use a descriptive keyword, such as top, bottom, center, or left; 
-        or we can specify, for example, 50% 50% to set the gradient at the center or 0% 0% to set the gradient to start at top left.</p>
-        <p>The second value defines the shape and the gradient size. There are two arguments to shape gradients: The first is the ellipse, which is the default; and the second is the circle.</p>
-        <p>Lastly, the third value defines the color combination.</p>
-        <p>The shape parameter defines the shape. If you do not define the shape of the radial gradient, it will take the ellipse value by default.</p>
-        <p>Essentially, we can use the same method used to specify the location of a background image with the background-position CSS property to specify the location of the ellipse’s center. We specify the horizontal position of the background, 
-            and - optionally - the vertical position using either keywords (left, center right, or top, center, bottom), length values, percentage values, or some combination of these.</p>
-        <p>As with linear gradients, a color stop is specified with a color, plus an optional stop position, which is a length or percentage value.</p>
+    <div><code>git log branchB..branchA</code></div>
+    <p>Show the  commits on branchA that are not on branchB</p>
+    
+    <div><code>git log --follow [file]</code></div>
+    <p>Show the commits that changed file, even across renames</p>
+
+    <div><code>git diff branchB...branchA</code></div>
+    <p>show the diff of what is in branchA that is not in branchB</p>
+
+    <div><code>git show [SHA]</code></div>
+    <p>show any object in Git in human-readable format</p>
+</section>
+<hr />
+<section id="main-section">
+    <header id="share-and-update">Share and update</header>
+    <p>Retrieving updates from another respiratory and updating local repos</p>
+
+    <div><code>git remote add [alias] [url] </code></div>
+    <p>add a git URL as alias</p>
+
+    <div><code>git fetch [alias]</code></div>
+    <p>fetch down all the branches from that Git remote</p>
+
+    <div><code>git merge [alias/[branch]</code></div>
+    <p>merge a remote branch into your current branch to bring it up to date</p>
+
+    <div><code>git push [alias] [branch]</code></div>
+    <p>transmit local branch commits to the local respiratory branch</p>
+
+    <div><code>git pull</code></div>
+    <p>fetch and merge any commits from the tracking remote branch</p>
+</section>
+<hr />
+<section>
+    <header id="rewrite-history">rewrite history</header>
+    <p>rewriting branches, updating commits and clearing history</p>
+
+    <div><code>git rebase [branch]</code></div>
+    <p>apply any commits of current branch ahead of specific one</p>
+
+   <div><code>git reset --hard[commit]</code></div>
+    <p>clear staging area, rewrite working tree from specific commit</p>
+</section>
+<hr />
+<section id="main-section">
+    <header id="tracking-path-changes">tracking path changes</header>
+    <p>preventing unintentional staging or committing of files</p>
+    <div><code>logs/<br />*.notes<br />pattern*/</code></div>
+    <p>saves file with desired patterns as .hitignore with either direct string matches or wildcard globs</p>
+    <div><code>git config --global core.excludesfile [file]</code></div>
+    <p>system wide ignore pattern for all local repositories</p>
+</section>
+<hr />
+<section id="main-section">
+    <header id="temporary-commits">temporary commits</header>
+    <p>temporary store modified, track files in order to change branches</p>
+    <div><code>git stash</code></div>
+    <p>save modified and stages changes</p>
+    <div><code>git stash list</code></div>
+    <p>list stack-order of stashed file changes</p>
+    <div><code>git stash pop</code></div>
+    <p>write working from top of stash stack</p>
+    <div><code>git stash drop</code></div>
+    <p>discard the changes from top of stash stack</p>
 </section>
     </main>
 </body>

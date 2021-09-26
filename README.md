@@ -1,2 +1,2 @@
 # documentation_page
-![alt text](Screenshoot.png)
+![alt text](https://github.com/Katja721/documentation_page/blob/main/Screenshot.png?raw=true)
